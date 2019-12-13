@@ -4,6 +4,7 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
@@ -38,4 +39,44 @@ public class HomeController {
         model.addAttribute("obj", result);
         return "index";
     }
+    @RequestMapping(value={"/","login"})
+    public String home(){
+        return "login";
+    }
+
+    @RequestMapping(value = "/login",  method = RequestMethod.POST)
+    public String newsfeed(){
+        return "newsfeed";
+    }
+
+    @RequestMapping(value = "/newsfeed",  method = RequestMethod.GET)
+    public String homenewsfeed(){
+        return "newsfeed";
+    }
+
+    @RequestMapping(value = "/timeline",  method = RequestMethod.GET)
+    public String timelinenewsfeed(){
+        return "timeline";
+    }
+
+    @RequestMapping(value = "/profile",  method = RequestMethod.GET)
+    public String profilenewsfeed(){
+        return "profile";
+    }
+
+    @RequestMapping(value = "/logout",  method = RequestMethod.GET)
+    public String logoutnewsfeed(){
+        return "login";
+    }
+
+    @RequestMapping(value = "/Signup",  method = RequestMethod.GET)
+    public String Signuplogin(){
+        return "Signup";
+    }
+
+    @RequestMapping(value = "/editprofile",  method = RequestMethod.GET)
+    public String editprofile(){
+        return "editprofile";
+    }
+
 }
