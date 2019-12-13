@@ -5,6 +5,7 @@ import org.springframework.social.connect.Connection;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.User;
 import org.springframework.social.facebook.connect.FacebookConnectionFactory;
+import org.springframework.social.google.connect.GoogleConnectionFactory;
 import org.springframework.social.oauth2.AccessGrant;
 import org.springframework.social.oauth2.OAuth2Operations;
 import org.springframework.social.oauth2.OAuth2Parameters;
@@ -92,6 +93,38 @@ public class HomeController {
     private FacebookConnectionFactory factory = new FacebookConnectionFactory("459570614997343",
             "527354cb4319414c73a7835ec7975ad6");
 
+    private GoogleConnectionFactory goFactory = new GoogleConnectionFactory("418297174173-vhe9sjf9iqkucuvjid97963fhr1er3le.apps.googleusercontent.com","RZEYP1hucL5b_TFwSXDNuFhP");
+
+    @GetMapping(value = "/go_login")
+    public String google_login() {
+
+        OAuth2Operations operations = goFactory.getOAuthOperations();
+        OAuth2Parameters params = new OAuth2Parameters();
+
+        params.setRedirectUri("http://localhost:8090/googleLogin");
+        params.setScope("https://mail.google.com/");
+
+        String url = operations.buildAuthenticateUrl(params);
+        System.out.println("The URL is" + url);
+        return "redirect:" + url;
+
+    }
+
+    @RequestMapping(value = "/googleLogin")
+    public ModelAndView googleLogin(@RequestParam("code") String authorizationCode) {
+        OAuth2Operations operations = goFactory.getOAuthOperations();
+        AccessGrant accessToken = operations.exchangeForAccess(authorizationCode, "http://localhost:8090/forwardLogin",
+                null);
+
+        Connection<Facebook> connection = factory.createConnection(accessToken);
+        Facebook goole = connection.getApi();
+       // String[] fields = {"id", "first_name", "last_name"};
+        User userProfile = goole.fetchObject("google",User.class);
+        ModelAndView model = new ModelAndView("newsfeed");
+        model.addObject("user", userProfile);
+        return model;
+
+    }
 
 
     @GetMapping(value = "/fb_login")

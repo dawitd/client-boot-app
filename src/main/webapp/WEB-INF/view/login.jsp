@@ -34,7 +34,7 @@
             <h6 class="text-white">welcome to habari</h6>
             <h2 class="text-white">Login Here</h2>
             <div class="line-divider"></div>
-            <a id="google-button" class="btn btn-block btn-social btn-google">
+            <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
                 <i class="fa fa-google"></i> Sign in with Google
             </a>
             <div class="line-divider"></div>
