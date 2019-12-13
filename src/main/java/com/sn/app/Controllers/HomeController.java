@@ -50,7 +50,7 @@ public class HomeController {
         model.addAttribute("obj", result);
         return "index";
     }
-    @RequestMapping(value={"/","login"})
+    @RequestMapping(value={"login"})
     public String home(){
         return "login";
     }
@@ -60,7 +60,7 @@ public class HomeController {
         return "newsfeed";
     }
 
-    @RequestMapping(value = "/newsfeed",  method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/newsfeed"},  method = RequestMethod.GET)
     public String homenewsfeed(){
         return "newsfeed";
     }
@@ -101,8 +101,8 @@ public class HomeController {
         OAuth2Operations operations = goFactory.getOAuthOperations();
         OAuth2Parameters params = new OAuth2Parameters();
 
-        params.setRedirectUri("http://localhost:8090/googleLogin");
-        params.setScope("https://mail.google.com/");
+        params.setRedirectUri("http://localhost:8090");
+        params.setScope("https://www.googleapis.com/auth/userinfo.profile");
 
         String url = operations.buildAuthenticateUrl(params);
         System.out.println("The URL is" + url);
