@@ -1,3 +1,8 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +36,13 @@
 
         <div class="sign-up-form">
             <a href="login" class="logo"><img src="images/mylogo.png" alt="Friend Finder"/></a>
-            <h6 class="text-white">welcome to habari</h6>
+
+
+
+            <h6> <spring:message code="welcome.message" text="default"/> to Habari</h6>
+            Language : <a href="?lang=eng">English</a>|<a href="?lang=sw">Swahili</a>
             <h2 class="text-white">Login Here</h2>
+
             <div class="line-divider"></div>
             <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
                 <i class="fa fa-google"></i> Sign in with Google
@@ -41,9 +51,7 @@
             <a href="fb_login" id="facebook-button" class="btn btn-block btn-social btn-facebook">
                 <i class="fa fa-facebook"></i> Sign in with Facebook
             </a>
-            <div class="line-divider"></div>
-                <h6> Or Use sites  credentials </h6>
-            <div class="line-divider"></div>
+
             <div class="form-wrapper">
                 <form action="login" method="post" >
                     <fieldset class="form-group">
@@ -142,4 +150,18 @@
 <script src="js/script.js"></script>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#locales").change(function () {
+            var selectedOption = $('#locales').val();
+            if (selectedOption != ''){
+                window.location.replace('international?lang=' + selectedOption);
+            }
+        });
+    });
+</script>
+
 </html>
