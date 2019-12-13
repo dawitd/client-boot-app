@@ -34,6 +34,16 @@
             <h6 class="text-white">welcome to habari</h6>
             <h2 class="text-white">Login Here</h2>
             <div class="line-divider"></div>
+            <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
+                <i class="fa fa-google"></i> Sign in with Google
+            </a>
+            <div class="line-divider"></div>
+            <a href="fb_login" id="facebook-button" class="btn btn-block btn-social btn-facebook">
+                <i class="fa fa-facebook"></i> Sign in with Facebook
+            </a>
+            <div class="line-divider"></div>
+                <h6> Or Use sites  credentials </h6>
+            <div class="line-divider"></div>
             <div class="form-wrapper">
                 <form action="login" method="post" >
                     <fieldset class="form-group">

@@ -50,6 +50,7 @@
                     <li class="dropdown"><a href="login">Logout</a></li>
                 </ul>
 
+
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
