@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,17 +48,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li class="dropdown"><a href="newsfeed">Home</a></li>
-                    <li class="dropdown"><a href="timeline">My Timeline</a></li>
-                    <li class="dropdown"><a href="profile">Profile</a></li>
-                    <li class="dropdown"><a href="login">Logout</a></li>
+                    <li class="dropdown"><a href="newsfeed"><spring:message code="Home" text="default"/></a></li>
+                    <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
+                    <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
+                    <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
 
 
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="<spring:message code="Search" text="default"/>">
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
@@ -73,15 +77,15 @@
             <div class="col-md-3 static">
                 <div class="profile-card">
                     <img src="images/users/user-1.jpg" alt="user" class="profile-photo" />
-                    <h5><a href="timeline.html" class="text-white">Sarah Cruiz</a></h5>
-                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 1,299 followers</a>
+                    <h5><a href="timeline" class="text-white">Sarah Cruiz</a></h5>
+                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 12 <spring:message code="followers" text="default"/></a>
                 </div><!--profile card ends-->
                 <ul class="nav-news-feed">
-                    <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed.html">My Newsfeed</a></div></li>
+                    <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed"><spring:message code="My_Newsfeed" text="default"/></a></div></li>
 
-                    <li><i class="icon ion-ios-people-outline"></i><div><a href="newsfeed-friends.html">Friends</a></div></li>
-                    <li><i class="icon ion-images"></i><div><a href="newsfeed-images.html">Images</a></div></li>
-                    <li><i class="icon ion-ios-videocam"></i><div><a href="newsfeed-videos.html">Videos</a></div></li>
+                    <li><i class="icon ion-ios-people-outline"></i><div><a href="#"><spring:message code="Friends" text="default"/></a></div></li>
+                    <li><i class="icon ion-images"></i><div><a href="#"><spring:message code="Images" text="default"/></a></div></li>
+                    <li><i class="icon ion-ios-videocam"></i><div><a href="#"><spring:message code="Videos" text="default"/></a></div></li>
                 </ul><!--news-feed links ends-->
 
             </div>
@@ -94,7 +98,7 @@
                         <div class="col-md-7 col-sm-7">
                             <div class="form-group">
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
-                                <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
+                                <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="<spring:message code="Write_what_you_wish" text="default"/>"></textarea>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5">
@@ -105,7 +109,7 @@
                                     <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
                                 </ul>
-                                <button class="btn btn-primary pull-right">Post</button>
+                                <button class="btn btn-primary pull-right"><spring:message code="Post" text="default"/></button>
                             </div>
                         </div>
                     </div>
@@ -325,40 +329,40 @@
             ================================================= -->
             <div class="col-md-2 static">
                 <div class="suggestions" id="sticky-sidebar">
-                    <h4 class="grey">Who to Follow</h4>
+                    <h4 class="grey"><spring:message code="Who_to_Follow" text="default"/></h4>
                     <div class="follow-user">
                         <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Diana Amber</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Cris Haris</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-13.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Brian Walton</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-14.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Olivia Steward</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-15.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Sophia Page</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                 </div>
@@ -369,25 +373,7 @@
 
 <!-- Footer
 ================================================= -->
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-wrapper">
-                <div class="col-md-3 col-sm-3">
-                    <a href=""><img src="images/mylogo.png" alt="" class="footer-logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h6>Contact Us</h6>
-                    <ul class="contact">
-                        <li><i class="icon ion-ios-telephone-outline"></i>+1 (234) 222 0754</li>
-                        <li><i class="icon ion-ios-email-outline"></i>info@mum.edu</li>
-                        <li><i class="icon ion-ios-location-outline"></i>1000 North 4th Street IA, USA</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+
 
 <!--preloader-->
 <div id="spinner-wrapper">

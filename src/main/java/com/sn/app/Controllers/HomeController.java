@@ -50,7 +50,7 @@ public class HomeController {
         model.addAttribute("obj", result);
         return "index";
     }
-    @RequestMapping(value={"login"})
+    @RequestMapping(value={"/","login"})
     public String home(){
         return "login";
     }
@@ -60,7 +60,7 @@ public class HomeController {
         return "newsfeed";
     }
 
-    @RequestMapping(value = {"/","/newsfeed"},  method = RequestMethod.GET)
+    @RequestMapping(value = {"/newsfeed"},  method = RequestMethod.GET)
     public String homenewsfeed(){
         return "newsfeed";
     }

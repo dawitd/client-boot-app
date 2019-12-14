@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,35 +34,35 @@
         ================================================= -->
         <div class="sign-up-form">
             <a href="login" class="logo"><img src="images/mylogo.png" alt="Friend Finder"/></a>
-            <h6 class="text-white">welcome to habari</h6>
-            <h2 class="text-white">SignUp Here</h2>
+            <h6 class="text-white"><spring:message code="welcome.message" text="default"/> to habari</h6>
+            <h2 class="text-white"><spring:message code="SignUpHere" text="default"/></h2>
             <div class="line-divider"></div>
             <div class="form-wrapper">
                 <form action="Signup" method="post">
-                    <p class="signup-text">SignUp now and meet awesome people around the world</p>
+                    <p class="signup-text"><spring:message code="SignUp_now_and_meet_awesome_people_around_the_world" text="default"/></p>
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter firstName">
+                        <input type="text" class="form-control" id="firstName" placeholder="<spring:message code="Enter_firstName" text="default"/>">
                     </fieldset>
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter lastName">
+                        <input type="text" class="form-control" id="lastName" placeholder="<spring:message code="Enter_lastName" text="default"/>">
                     </fieldset>
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="email" placeholder="Enter email">
+                        <input type="text" class="form-control" id="email" placeholder="<spring:message code="Enter_email" text="default"/>">
                     </fieldset>
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        <input type="text" class="form-control" id="username" placeholder="<spring:message code="Enter_username" text="default"/>">
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                        <input type="password" class="form-control" id="password" placeholder="<spring:message code="Enter_a_password" text="default"/>">
                     </fieldset>
-                    <button class="btn-secondary"><a href="login">SignUp</a></button>
+                    <button class="btn-secondary"><a href="login"><spring:message code="SignUp" text="default"/></a></button>
                 </form>
 
 
             </div>
 
-            <a href="login">Click Here to login</a>
+            <a href="login"><spring:message code="Click_Here_to_login" text="default"/></a>
             <img class="form-shadow" src="images/bottom-shadow.png" alt="" />
         </div><!-- Sign Up Form End -->
 

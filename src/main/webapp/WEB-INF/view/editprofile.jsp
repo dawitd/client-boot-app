@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,15 +45,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li class="dropdown"><a href="newsfeed">Home</a></li>
-                    <li class="dropdown"><a href="timeline">My Timeline</a></li>
-                    <li class="dropdown"><a href="profile">Profile</a></li>
-                    <li class="dropdown"><a href="login">Logout</a></li>
+                    <li class="dropdown"><a href="newsfeed"><spring:message code="Home" text="default"/></a></li>
+                    <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
+                    <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
+                    <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="<spring:message code="Search" text="default"/>">
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
@@ -59,7 +63,7 @@
 <!--Header End-->
 
 <div class="google-maps">
-    <div id="map" class="map contact-map"></div>
+    <div class="map contact-map"></div>
 </div>
 <div id="page-contents">
     <div class="container">
@@ -72,59 +76,57 @@
                             <div class="col-md-3">
                                 <div class="profile-info">
                                     <img src="images/users/user-1.jpg" alt="" class="img-responsive profile-photo" />
-                                    <h6>New profile picture</h6>
+                                    <h6><spring:message code="Newprofilepicture" text="default"/></h6>
 
                                 </div>
                             </div>
 
-                            <h4 class="grey">Update your profile</h4>
+                            <h4 class="grey"><spring:message code="UpdateProfile" text="default"/></h4>
                             <form class="contact-form">
                                 <div class="form-group">
                                     <i class="ion-images"></i>
-                                    <input id="picture" name="picture" class="form-control" placeholder="upload picture">
-                                    <button class="btn-primary">Upload picture</button>
+                                    <input id="picture" name="picture" class="form-control" placeholder="<spring:message code="Uploadpicture" text="default"/>">
+                                    <button class="btn-primary"><spring:message code="Browse" text="default"/></button>
                                 </div>
                                 <div class="form-group">
                                     <i class="icon ion-person"></i>
-                                    <input id="firstname" type="text" name="firstname" class="form-control" placeholder="first name">
+                                    <input id="firstname" type="text" name="firstname" class="form-control" placeholder="<spring:message code="Enter_firstName" text="default"/>">
                                 </div>
                                 <div class="form-group">
                                     <i class="icon ion-person"></i>
-                                    <input id="lastname" type="text" name="lastname" class="form-control" placeholder="last name" >
+                                    <input id="lastname" type="text" name="lastname" class="form-control" placeholder="<spring:message code="Enter_lastName" text="default"/>" >
                                 </div>
                                 <div class="form-group">
                                     <select id="gender" class="form-control" name="gender">
-                                        <option>choose gender</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
+                                        <option><spring:message code="choosegender" text="default"/></option>
+                                        <option value="male"><spring:message code="Male" text="default"/></option>
+                                        <option value="female"><spring:message code="Female" text="default"/></option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <i class="icon ion-email"></i>
-                                    <input id="email" type="text" name="email" class="form-control" placeholder="email" >
+                                    <input id="email" type="text" name="email" class="form-control" placeholder="<spring:message code="Email" text="default"/>" >
                                 </div>
                                 <div class="form-group">
                                     <i class="icon ion-android-call"></i>
-                                    <input id="phonenumber" type="text" name="phone" class="form-control" placeholder="phonenumber">
+                                    <input id="phonenumber" type="text" name="phone" class="form-control" placeholder="<spring:message code="Phone_Number" text="default"/>">
+                                </div>
+
+                                <div class="form-group">
+                                    <input id="City" type="text" name="phone" class="form-control" placeholder="<spring:message code="City" text="default"/>">
                                 </div>
                                 <div class="form-group">
-                                    <input id="Street" type="text" name="phone" class="form-control" placeholder="Street">
+                                    <input id="State" type="text" name="phone" class="form-control" placeholder="<spring:message code="State" text="default"/>">
                                 </div>
                                 <div class="form-group">
-                                    <input id="City" type="text" name="phone" class="form-control" placeholder="City">
-                                </div>
-                                <div class="form-group">
-                                    <input id="State" type="text" name="phone" class="form-control" placeholder="State">
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="form-message" name="message" class="form-control" placeholder="Short Bio" rows="4"></textarea>
+                                    <textarea id="form-message" name="message" class="form-control" placeholder="<spring:message code="ShortBio" text="default"/>" rows="4"></textarea>
                                 </div>
                             </form>
-                            <button class="btn-primary">Update Profile</button>
+                            <button class="btn-primary"><spring:message code="UpdateProfile" text="default"/></button>
                         </div>
                         <div class="col-md-4 col-sm-5">
-                            <a href="newsfeed.html" class="logo"><img src="images/mylogo.png" alt="Friend Finder"/></a>
-                            <h4 class="grey">Reach Us</h4>
+                            <a href="newsfeed" class="logo"><img src="images/mylogo.png" alt="Friend Finder"/></a>
+                            <h4 class="grey"><spring:message code="ContactUs" text="default"/></h4>
                             <div class="reach"><span class="phone-icon"><i class="icon ion-android-call"></i></span><p>+1 (234) 222 0754</p></div>
                             <div class="reach"><span class="phone-icon"><i class="icon ion-email"></i></span><p>info@mum.edu</p></div>
                             <div class="reach"><span class="phone-icon"><i class="icon ion-ios-location"></i></span><p>1000 North 4th Street IA, USA</p></div>

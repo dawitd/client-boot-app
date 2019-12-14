@@ -1,7 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,36 +38,36 @@
 
 
 
-            <h6> <spring:message code="welcome.message" text="default"/> to Habari</h6>
+            <h6 class="text-white"> <spring:message code="welcome.message" text="default"/> to Habari</h6>
             Language : <a href="?lang=eng">English</a>|<a href="?lang=sw">Swahili</a>
-            <h2 class="text-white">Login Here</h2>
+            <h2 class="text-white"><spring:message code="LoginHere" text="default"/></h2>
 
             <div class="line-divider"></div>
             <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
-                <i class="fa fa-google"></i> Sign in with Google
+                <i class="fa fa-google"></i> <spring:message code="Sign_in_with" text="default"/> Google
             </a>
             <div class="line-divider"></div>
             <a href="fb_login" id="facebook-button" class="btn btn-block btn-social btn-facebook">
-                <i class="fa fa-facebook"></i> Sign in with Facebook
+                <i class="fa fa-facebook"></i> <spring:message code="Sign_in_with" text="default"/> Facebook
             </a>
 
             <div class="form-wrapper">
                 <form action="login" method="post" >
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        <input type="text" class="form-control" id="username" placeholder="<spring:message code="Enter_username" text="default"/>">
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                        <input type="password" class="form-control" id="password" placeholder="<spring:message code="Enter_a_password" text="default"/>">
                     </fieldset>
 
-                    <button class="btn-secondary" type="submit" >login</button>
+                    <button class="btn-secondary" type="submit" ><spring:message code="login" text="default"/></button>
                 </form>
 
             </div>
-            <p class="signup-text">login now and meet awesome people around the world</p>
+            <p class="signup-text"><spring:message code="login_now_and_meet_awesome_people_around_the_world" text="default"/></p>
 
-            <a href="Signup">Click Here to Signup</a>
+            <a href="Signup"><spring:message code="Click_Here_to_Signup" text="default"/></a>
             <img class="form-shadow" src="images/bottom-shadow.png" alt="" />
         </div><!-- Sign Up Form End -->
 
