@@ -35,10 +35,10 @@ function viewprofileOnePersonToEdit() {
                 $("#addressCity").val(data.addressCity);
                 $("#bio").val(data.bio);
 
-                $("#profile").html(profile);
+               // $("#profile").html(profile);
                 //$("#postcount").html(count + " posts ");
-                $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePath);
-               // alert(data.profilePath);
+                $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
+                alert(data.profilePath);
 
             },
             error : function() {

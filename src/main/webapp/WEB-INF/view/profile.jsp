@@ -70,7 +70,7 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="profile-info">
-                            <img src="images/users/defaultprofile.png" alt="" class="img-responsive profile-photo" />
+                            <img src="" alt="" class="img-responsive profile-photo" id="p_image2" />
                             <h3 id="names"></h3>
 
                         </div>
@@ -160,8 +160,11 @@
                             <p id="address"></p>
 
                         </div>
-
-
+                        <div class="about-content-block">
+                            <video controls id="videodisplay">
+                                <source type="video/mp4" src="" >
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2 static">

@@ -66,6 +66,8 @@ function viewprofileOnePerson() {
                  $("#phoneNumber").text(data.phoneNumber);
                  $("#address").text(data.addressCity+", "+ data.addressState);
                  $("#bio").text(data.bio);
+                $('#videodisplay').attr('src', 'data:video/mp4;base64,'+ data.profilePic);
+                alert(data.profilePic);
 
 
             },

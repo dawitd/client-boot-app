@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!--Google Webfont-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>
-    <!--Favicon-->
+<%--    <!--Google Webfont-->--%>
+<%--    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>--%>
+<%--    <!--Favicon-->--%>
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
 </head>
 <body>
@@ -71,7 +71,7 @@
 
                             <div class="col-md-3">
                                 <div class="profile-info">
-                                    <img src="images/users/user-1.jpg" alt="" class="img-responsive profile-photo" id="p_image2" width="160px" height="160px" />
+                                    <img src="images/users/user-1.jpg" id="p_image2" alt="" class="img-responsive profile-photo" width="160px" height="160px" />
                                     <h6>New profile picture</h6>
 
                                 </div>
