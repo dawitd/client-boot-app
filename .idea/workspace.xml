@@ -13,6 +13,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" afterDir="false" />
 
     </list>
+  </component>
+  <component>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
 
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +49,9 @@
   <component name="ProjectId" id="1UroJaFlV1XRtxjgCIRa0aPTq2z" />
 
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <option name="hideEmptyMiddlePackages" value="true" />
+  <option name="showExcludedFiles" value="true" />
+  <option name="showLibraryContents" value="true" />
 
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -65,7 +67,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
- 
+
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,9 +75,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
- 
+
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
- 
+
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -94,7 +96,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
- 
+
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -107,7 +109,7 @@
         </RuleState>
       </list>
     </option>
- 
+
   </component>
   <component name="RunManager">
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -115,9 +117,9 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sn.app.AppApplication" />
       <option name="VM_PARAMETERS" value="-Dserver.port=8090" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
- 
+
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
- 
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,13 +153,13 @@
       <workItem from="1576203792001" duration="8908000" />
       <workItem from="1576255881395" duration="1161000" />
       <workItem from="1576265304777" duration="182000" />
- 
+
       <workItem from="1576271344954" duration="466000" />
       <workItem from="1576271850027" duration="16270000" />
- 
+
       <workItem from="1576271732241" duration="196000" />
       <workItem from="1576271968482" duration="1510000" />
- 
+
     </task>
     <task id="LOCAL-00001" summary="add some method in home controller and change forms in JSP">
       <created>1576221273158</created>
