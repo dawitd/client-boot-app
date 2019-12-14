@@ -34,7 +34,7 @@
             <h2 class="text-white">SignUp Here</h2>
             <div class="line-divider"></div>
             <div class="form-wrapper">
-                <form action="Signup" method="post">
+                <form >
                     <p class="signup-text">SignUp now and meet awesome people around the world</p>
                     <fieldset class="form-group">
                         <input type="text" class="form-control" id="firstName" placeholder="Enter firstName">
@@ -52,11 +52,17 @@
                     <fieldset class="form-group">
                         <input type="password" class="form-control" id="password" placeholder="Enter a password">
                     </fieldset>
-                    <button class="btn-secondary"><a href="login">SignUp</a></button>
+
+<%--                    <button class="btn-secondary" id="create_account"><a href="login">SignUp</a></button>--%>
+
+
                 </form>
+                <button class="btn-secondary" id="create_account">SignUp</button>
+
 
 
             </div>
+            <div id="feedback"></div>
 
             <a href="login">Click Here to login</a>
             <img class="form-shadow" src="images/bottom-shadow.png" alt="" />
@@ -92,6 +98,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.appear.min.js"></script>
 <script src="js/jquery.incremental-counter.js"></script>
+<script src="servicerest/create_account.js"></script>
 <script src="js/script.js"></script>
 
 </body>

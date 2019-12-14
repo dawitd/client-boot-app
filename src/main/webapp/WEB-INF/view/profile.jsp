@@ -70,8 +70,8 @@
                 <div class="row">
                     <div class="col-md-3">
                         <div class="profile-info">
-                            <img src="images/users/defaultprofile.png" alt="" class="img-responsive profile-photo" />
-                            <h3>firstname&lastname</h3>
+                            <img src="" alt="" class="img-responsive profile-photo" id="p_image2" />
+                            <h3 id="names"></h3>
 
                         </div>
                     </div>
@@ -84,7 +84,8 @@
                         </ul>
                         <ul class="follow-me list-inline">
                             <li>12 followers</li>
-                            <li><button class="btn-primary"><a href="editprofile">Edit Profile</a></button></li>
+                            <li><button class="btn-primary" id="view_data"><a href="editprofile">Edit Profile</a></button></li>
+<%--                            <button class="btn-primary" id="view_data">view Profile</button>--%>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +95,7 @@
             <div class="navbar-mobile hidden-lg hidden-md">
                 <div class="profile-info">
                     <img src="images/users/user-1.jpg" alt="" class="img-responsive profile-photo" />
-                    <h4>firstname and lastname</h4>
+                    <h4 id="">firstname and lastname</h4>
                     <p class="text-muted">Creative Director</p>
                 </div>
                 <div class="mobile-menu">
@@ -123,7 +124,7 @@
 
                                 <div class="work-info">
                                     <h5>Gender </h5>
-                                    <p>User - <span class="text-grey">Gender</span></p>
+                                    <p id="gender"></p>
                                 </div>
                             </div>
 
@@ -131,7 +132,7 @@
 
                                 <div class="work-info">
                                     <h5>Phone Number </h5>
-                                    <p>User - <span class="text-grey">Phone Number</span></p>
+                                    <p id="phoneNumber"></p>
                                 </div>
                             </div>
 
@@ -139,7 +140,7 @@
 
                                 <div class="work-info">
                                     <h5>Email </h5>
-                                    <p>User - <span class="text-grey">email</span></p>
+                                    <p id="email"></p>
                                 </div>
                             </div>
 
@@ -148,7 +149,7 @@
                         <div class="about-content-block">
 
                             <h4 class="grey"><i class="ion-ios-briefcase-outline icon-in-title"></i>Biography</h4>
-                            <p>User Biography</p>
+                            <p id="bio"></p>
 
                         </div>
 
@@ -156,11 +157,14 @@
 
                         <div class="about-content-block">
                             <h4 class="grey"><i class="ion-ios-location-outline icon-in-title"></i>Location</h4>
-                            <p>228 Park Eve, New York</p>
+                            <p id="address"></p>
 
                         </div>
-
-
+                        <div class="about-content-block">
+                            <video controls id="videodisplay">
+                                <source type="video/mp4" src="" >
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2 static">
@@ -232,6 +236,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
+<script src="servicerest/viewprofile.js"></script>
 <script src="js/script.js"></script>
 
 </body>
