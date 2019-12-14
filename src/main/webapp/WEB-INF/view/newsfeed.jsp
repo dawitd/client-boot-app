@@ -94,7 +94,8 @@
                         <div class="col-md-7 col-sm-7">
                             <div class="form-group">
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
-                                <textarea name="texts" id="exampleTextarea" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
+                                <input id="idperson" type="hidden" value="1"/>
+                                <textarea name="texts" id="postText" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5">
@@ -105,7 +106,7 @@
                                     <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
                                 </ul>
-                                <button class="btn btn-primary pull-right">Post</button>
+                                <button class="btn btn-primary pull-right " id="btn-post">Post</button>
                             </div>
                         </div>
                     </div>
@@ -396,11 +397,13 @@
 
 <!-- Scripts
 ================================================= -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTMXfmDn0VlqWIyoOxK8997L-amWbUPiQ&callback=initMap"></script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTMXfmDn0VlqWIyoOxK8997L-amWbUPiQ&callback=initMap"></script>-->
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/post.on.newsfeed.js"></script>
+<!--<script src="servicerest/post.display.timeline.js"></script>-->
 </body>
 </html>
