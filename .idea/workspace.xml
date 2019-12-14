@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/create_account.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/update_my_profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/updateprofile_test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/uploadpic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/viewprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editprofile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/editprofile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +17,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -121,7 +114,7 @@
       <workItem from="1576255881395" duration="1161000" />
       <workItem from="1576265304777" duration="182000" />
       <workItem from="1576271344954" duration="466000" />
-      <workItem from="1576271850027" duration="8799000" />
+      <workItem from="1576271850027" duration="9195000" />
     </task>
     <task id="LOCAL-00001" summary="add some method in home controller and change forms in JSP">
       <created>1576221273158</created>
@@ -180,38 +173,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1576271684067" />
-    <state width="1398" height="403" key="GridCell.Tab.0.bottom" timestamp="1576282960394">
+    <state width="1398" height="500" key="GridCell.Tab.0.bottom" timestamp="1576283203317">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576282960394" />
-    <state width="1398" height="403" key="GridCell.Tab.0.center" timestamp="1576282960392">
+    <state width="1398" height="500" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576283203317" />
+    <state width="1398" height="500" key="GridCell.Tab.0.center" timestamp="1576283203315">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576282960392" />
-    <state width="1398" height="403" key="GridCell.Tab.0.left" timestamp="1576282960390">
+    <state width="1398" height="500" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576283203315" />
+    <state width="1398" height="500" key="GridCell.Tab.0.left" timestamp="1576283203314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576282960390" />
-    <state width="1398" height="403" key="GridCell.Tab.0.right" timestamp="1576282960393">
+    <state width="1398" height="500" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576283203314" />
+    <state width="1398" height="500" key="GridCell.Tab.0.right" timestamp="1576283203316">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576282960393" />
-    <state width="1398" height="403" key="GridCell.Tab.1.bottom" timestamp="1576282960398">
+    <state width="1398" height="500" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576283203316" />
+    <state width="1398" height="500" key="GridCell.Tab.1.bottom" timestamp="1576283203319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576282960398" />
-    <state width="1398" height="403" key="GridCell.Tab.1.center" timestamp="1576282960396">
+    <state width="1398" height="500" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576283203319" />
+    <state width="1398" height="500" key="GridCell.Tab.1.center" timestamp="1576283203318">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576282960396" />
-    <state width="1398" height="403" key="GridCell.Tab.1.left" timestamp="1576282960395">
+    <state width="1398" height="500" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1576283203318" />
+    <state width="1398" height="500" key="GridCell.Tab.1.left" timestamp="1576283203318">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576282960395" />
-    <state width="1398" height="403" key="GridCell.Tab.1.right" timestamp="1576282960397">
+    <state width="1398" height="500" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1576283203318" />
+    <state width="1398" height="500" key="GridCell.Tab.1.right" timestamp="1576283203319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="403" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576282960396" />
+    <state width="1398" height="500" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1576283203319" />
     <state width="1398" height="303" key="GridCell.Tab.2.bottom" timestamp="1576271817530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
