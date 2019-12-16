@@ -1,5 +1,9 @@
 package com.sn.app.Controllers;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.sn.app.domain.Person;
+import com.sn.app.services.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.social.connect.Connection;
 import org.springframework.social.facebook.api.Facebook;
@@ -11,10 +15,7 @@ import org.springframework.social.oauth2.OAuth2Operations;
 import org.springframework.social.oauth2.OAuth2Parameters;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -22,6 +23,9 @@ import java.util.Arrays;
 
 @Controller
 public class HomeController {
+
+    @Autowired
+    LoginService loginService;
 //    static final String all = "http://localhost:8080/person/all";
 //    @RequestMapping("home")
 //    public String Home(Model model){
@@ -51,13 +55,18 @@ public class HomeController {
 //        return "index";
 //    }
     @RequestMapping(value={"login"})
-    public String home(){
+    public String home(@ModelAttribute("person") Person person){
         return "login";
     }
 
     @RequestMapping(value = "/login",  method = RequestMethod.POST)
-    public String newsfeed(){
-        return "newsfeed";
+    public String newsfeed(@ModelAttribute("person") Person person) throws JsonProcessingException {
+
+        if (loginService.login(person.getUsername(),person.getPassword())){
+
+            return "newsfeed";
+        }
+        return "login";
     }
 
     @RequestMapping(value = {"/","/newsfeed"},  method = RequestMethod.GET)

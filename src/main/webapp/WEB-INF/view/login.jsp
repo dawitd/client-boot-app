@@ -45,13 +45,13 @@
                 <h6> Or Use sites  credentials </h6>
             <div class="line-divider"></div>
             <div class="form-wrapper">
-                <form action="login" method="post" >
+                <form action="login" modelAttribute="person" method="post" >
                     <fieldset class="form-group">
-                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        <input type="text" name= "username" class="form-control" id="username" placeholder="Enter username">
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="Enter a password">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Enter a password">
                     </fieldset>
 
                     <button class="btn-secondary" type="submit" >login</button>
