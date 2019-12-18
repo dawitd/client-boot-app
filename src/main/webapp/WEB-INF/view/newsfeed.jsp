@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="css/emoji.css" rel="stylesheet">
-    <!--Google Webfont-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>
-    <!--Favicon-->
+
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
 </head>
 <body>
@@ -53,6 +51,7 @@
                     <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
                     <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
+
 
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
@@ -100,6 +99,7 @@
                                 <input id="person_id" type="hidden" value="1">
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
 
+
                                 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
 <%--                                    <input type="hidden" class="form-control" id="user_id" value="15"/>--%>
     <textarea id="postText" cols="30" rows="1" class="form-control" /></textarea>
@@ -123,7 +123,9 @@
                                     <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
                                 </ul>
+
                                 <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>
+
                             </div>
                         </div>
                     </div>
@@ -402,5 +404,7 @@
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="servicerest/postnewsfeed.js"></script>
 <script src="js/script.js"></script>
+<script src="js/post.on.newsfeed.js"></script>
+<!--<script src="servicerest/post.display.timeline.js"></script>-->
 </body>
 </html>

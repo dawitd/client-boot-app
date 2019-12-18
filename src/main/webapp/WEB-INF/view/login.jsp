@@ -44,12 +44,14 @@
 
             <div class="line-divider"></div>
             <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
+
                 <i class="fa fa-google"></i> <spring:message code="Sign_in_with" text="default"/> Google
             </a>
             <div class="line-divider"></div>
             <a href="fb_login" id="facebook-button" class="btn btn-block btn-social btn-facebook">
                 <i class="fa fa-facebook"></i> <spring:message code="Sign_in_with" text="default"/> Facebook
             </a>
+
 
 
             <div class="form-wrapper">

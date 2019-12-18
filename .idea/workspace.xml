@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_expression_processor_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_sw.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/get_all_person.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/post.display.timeline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/postnewsfeed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/timeline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -44,7 +27,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/updateprofile_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/updateprofile_test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/uploadpic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/uploadpic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/viewprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/viewprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +59,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1UroJaFlV1XRtxjgCIRa0aPTq2z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -110,13 +96,6 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/servicerest" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/images/covers" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,12 +139,9 @@
       <workItem from="1576255881395" duration="1161000" />
       <workItem from="1576265304777" duration="182000" />
       <workItem from="1576271344954" duration="466000" />
-      <workItem from="1576271850027" duration="21226000" />
-      <workItem from="1576342315766" duration="16593000" />
-      <workItem from="1576427386111" duration="21000" />
-      <workItem from="1576453710312" duration="578000" />
-      <workItem from="1576466758240" duration="797000" />
-      <workItem from="1576617575583" duration="12041000" />
+      <workItem from="1576271850027" duration="16270000" />
+      <workItem from="1576271732241" duration="196000" />
+      <workItem from="1576271968482" duration="1510000" />
     </task>
     <task id="LOCAL-00001" summary="add some method in home controller and change forms in JSP">
       <created>1576221273158</created>
