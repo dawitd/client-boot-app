@@ -76,7 +76,17 @@ public class HomeController {
         return "newsfeed";
     }
 
-    @RequestMapping(value = "/timeline",  method = {RequestMethod.GET, RequestMethod.POST})
+    @RequestMapping(value = {"/AdminHome"},  method = {RequestMethod.GET, RequestMethod.POST})
+    public String AdminHome(){
+        return "AdminHome";
+    }
+
+    @RequestMapping(value = {"/AdminManagePost"},  method = {RequestMethod.GET, RequestMethod.POST})
+    public String AdminManagePost(){
+        return "AdminManagePost";
+    }
+
+    @RequestMapping(value = "/timeline",  method ={RequestMethod.GET, RequestMethod.POST})
     public String timelinenewsfeed(){
         return "timeline";
     }

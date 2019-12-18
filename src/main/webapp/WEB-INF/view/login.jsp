@@ -1,13 +1,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<<<<<<< HEAD
 
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-=======
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
->>>>>>> 8a4756a894c86c93e61a008f243ff23e9a39e091
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
