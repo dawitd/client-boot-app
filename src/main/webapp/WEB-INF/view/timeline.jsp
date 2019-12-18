@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,15 +46,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li class="dropdown"><a href="newsfeed">Home</a></li>
-                    <li class="dropdown"><a href="timeline">My Timeline</a></li>
-                    <li class="dropdown"><a href="profile">Profile</a></li>
-                    <li class="dropdown"><a href="login">Logout</a></li>
+                    <li class="dropdown"><a href="newsfeed"><spring:message code="Home" text="default"/></a></li>
+                    <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
+                    <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
+                    <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="<spring:message code="Search" text="default"/>">
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
@@ -77,35 +81,19 @@
                     </div>
                     <div class="col-md-9">
                         <ul class="list-inline profile-menu">
-                            <li><a href="timeline" class="active">Timeline</a></li>
+                            <li><a href="timeline" class="active"><spring:message code="Timeline" text="default"/></a></li>
 
-                            <li><a href="timeline-friends">Friends</a></li>
+                            <li><a href="timeline-friends"><spring:message code="followers" text="default"/></a></li>
                         </ul>
                         <ul class="follow-me list-inline">
-                            <li>1,299 people following her</li>
-                            <li><button class="btn-primary">follow</button></li>
+                            <li><spring:message code="followers" text="default"/></li>
+                            <li><button class="btn-primary"><spring:message code="Follow" text="default"/></button></li>
                         </ul>
                     </div>
                 </div>
             </div><!--Timeline Menu for Large Screens End-->
 
-            <!--Timeline Menu for Small Screens-->
-            <div class="navbar-mobile hidden-lg hidden-md">
-                <div class="profile-info">
-                    <img src="images/users/user-1.jpg" alt="" class="img-responsive profile-photo" />
-                    <h4>Sarah Cruiz</h4>
-                    <p class="text-muted">Creative Director</p>
-                </div>
-                <div class="mobile-menu">
-                    <ul class="list-inline">
-                        <li><a href="timeline.html" class="active">Timeline</a></li>
-                        <li><a href="timeline-about.html">About</a></li>
-                        <li><a href="timeline-album.html">Album</a></li>
-                        <li><a href="timeline-friends.html">Friends</a></li>
-                    </ul>
-                    <button class="btn-primary">Add Friend</button>
-                </div>
-            </div><!--Timeline Menu for Small Screens End-->
+
 
         </div>
         <div id="page-contents">
@@ -117,15 +105,22 @@
                     ================================================= -->
                     <div class="post-content">
 
+<<<<<<< HEAD
                     </div>
 
 
 
+=======
+
+
+                    </div>
+
+>>>>>>> 8a4756a894c86c93e61a008f243ff23e9a39e091
 
                 </div>
                 <div class="col-md-2 static">
                     <div id="sticky-sidebar">
-                        <h4 class="grey">Sarah's activity</h4>
+                        <h4 class="grey"><spring:message code="activity" text="default"/></h4>
                         <div class="feed-item">
                             <div class="live-activity">
                                 <p><a href="#" class="profile-link">Sarah</a> Commended on a Photo</p>
@@ -172,9 +167,11 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
+<script src="servicerest/timeline.js"></script>
 <script src="js/script.js"></script>
 <script src="js/timeline.js"></script>
 <script src="js/addcomment.js"></script>
+
 
 
 </body>

@@ -1,3 +1,7 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +19,7 @@
     <link rel="stylesheet" href="css/ionicons.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="css/emoji.css" rel="stylesheet">
-    <!--Google Webfont-->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700' rel='stylesheet' type='text/css'>
-    <!--Favicon-->
+
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
 </head>
 <body>
@@ -44,17 +46,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li class="dropdown"><a href="newsfeed">Home</a></li>
-                    <li class="dropdown"><a href="timeline">My Timeline</a></li>
-                    <li class="dropdown"><a href="profile">Profile</a></li>
-                    <li class="dropdown"><a href="login">Logout</a></li>
+                    <li class="dropdown"><a href="newsfeed"><spring:message code="Home" text="default"/></a></li>
+                    <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
+                    <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
+                    <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
 
 
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" class="form-control" placeholder="<spring:message code="Search" text="default"/>">
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
@@ -73,16 +75,17 @@
             <div class="col-md-3 static">
                 <div class="profile-card">
                     <img src="images/users/user-1.jpg" alt="user" class="profile-photo" />
-                    <h5><a href="timeline.html" class="text-white">Sarah Cruiz</a></h5>
-                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 1,299 followers</a>
+                    <h5><a href="timeline" class="text-white">Sarah Cruiz</a></h5>
+                    <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 12 <spring:message code="followers" text="default"/></a>
                 </div><!--profile card ends-->
                 <ul class="nav-news-feed">
-                    <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed.html">My Newsfeed</a></div></li>
+                    <li><i class="icon ion-ios-paper"></i><div><a href="newsfeed"><spring:message code="My_Newsfeed" text="default"/></a></div></li>
 
-                    <li><i class="icon ion-ios-people-outline"></i><div><a href="newsfeed-friends.html">Friends</a></div></li>
-                    <li><i class="icon ion-images"></i><div><a href="newsfeed-images.html">Images</a></div></li>
-                    <li><i class="icon ion-ios-videocam"></i><div><a href="newsfeed-videos.html">Videos</a></div></li>
+                    <li><i class="icon ion-ios-people-outline"></i><div><a href="#"><spring:message code="Friends" text="default"/></a></div></li>
+                    <li><i class="icon ion-images"></i><div><a href="#"><spring:message code="Images" text="default"/></a></div></li>
+                    <li><i class="icon ion-ios-videocam"></i><div><a href="#"><spring:message code="Videos" text="default"/></a></div></li>
                 </ul><!--news-feed links ends-->
+                <!--news-feed links ends-->
 
             </div>
             <div class="col-md-7">
@@ -93,9 +96,23 @@
                     <div class="row">
                         <div class="col-md-7 col-sm-7">
                             <div class="form-group">
+                                <input id="person_id" type="hidden" value="1">
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
-                                <input id="idperson" type="hidden" value="1"/>
-                                <textarea name="texts" id="postText" cols="30" rows="1" class="form-control" placeholder="Write what you wish"></textarea>
+
+
+                                <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+<%--                                    <input type="hidden" class="form-control" id="user_id" value="15"/>--%>
+    <textarea id="postText" cols="30" rows="1" class="form-control" /></textarea>
+
+                                    <input type="file" class="form-control" ID="profilepic_edit" name="file" /><br/>
+
+<%--    value="<spring:message code="Browse" text="default"/>--%>
+                                     <input type="submit" ID="post_upload_btn" class="btn btn-primary" value="Save Post"/>
+                                </form>
+
+
+
+
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5">
@@ -106,7 +123,9 @@
                                     <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
                                 </ul>
-                                <button class="btn btn-primary pull-right " id="btn-post">Post</button>
+
+                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>
+
                             </div>
                         </div>
                     </div>
@@ -161,40 +180,40 @@
             ================================================= -->
             <div class="col-md-2 static">
                 <div class="suggestions" id="sticky-sidebar">
-                    <h4 class="grey">Who to Follow</h4>
+                    <h4 class="grey"><spring:message code="Who_to_Follow" text="default"/></h4>
                     <div class="follow-user">
                         <img src="images/users/user-11.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Diana Amber</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-12.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Cris Haris</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-13.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Brian Walton</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-14.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Olivia Steward</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                     <div class="follow-user">
                         <img src="images/users/user-15.jpg" alt="" class="profile-photo-sm pull-left" />
                         <div>
                             <h5><a href="timeline.html">Sophia Page</a></h5>
-                            <a href="#" class="text-green">Add friend</a>
+                            <a href="#" class="text-green"><spring:message code="Follow" text="default"/></a>
                         </div>
                     </div>
                 </div>
@@ -203,27 +222,7 @@
     </div>
 </div>
 
-<!-- Footer
-================================================= -->
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-wrapper">
-                <div class="col-md-3 col-sm-3">
-                    <a href=""><img src="images/mylogo.png" alt="" class="footer-logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <h6>Contact Us</h6>
-                    <ul class="contact">
-                        <li><i class="icon ion-ios-telephone-outline"></i>+1 (234) 222 0754</li>
-                        <li><i class="icon ion-ios-email-outline"></i>info@mum.edu</li>
-                        <li><i class="icon ion-ios-location-outline"></i>1000 North 4th Street IA, USA</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+
 
 <!--preloader-->
 <div id="spinner-wrapper">
@@ -232,11 +231,13 @@
 
 <!-- Scripts
 ================================================= -->
-<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTMXfmDn0VlqWIyoOxK8997L-amWbUPiQ&callback=initMap"></script>-->
+
+
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
+<script src="servicerest/postnewsfeed.js"></script>
 <script src="js/script.js"></script>
 <script src="js/addcomment.js"></script>
 <!--<script src="js/timeline.js"></script>-->
