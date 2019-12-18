@@ -58,11 +58,11 @@
                 <form action="login" modelAttribute="person" method="post" >
                     <fieldset class="form-group">
  
-                        <input type="text" class="form-control" id="username" placeholder="<spring:message code="Enter_username" text="default"/>">
+                        <input type="text" class="form-control" name="username" id="username" placeholder="<spring:message code="Enter_username" text="default"/>">
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="<spring:message code="Enter_a_password" text="default"/>">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="<spring:message code="Enter_a_password" text="default"/>">
  
                     </fieldset>
 

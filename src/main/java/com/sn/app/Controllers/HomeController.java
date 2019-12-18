@@ -18,6 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Arrays;
 
@@ -55,24 +56,26 @@ public class HomeController {
         return "index";
     }
     @RequestMapping(value={"/","login"})
-
-    public String home(){
-
+    public String home(@ModelAttribute("person") Person person){
         return "login";
     }
 
     @RequestMapping(value = "/login",  method = RequestMethod.POST)
-    public String newsfeed(@ModelAttribute("person") Person person) throws JsonProcessingException {
+    public String newsfeed(@ModelAttribute("person") Person person,RedirectAttributes ra) throws JsonProcessingException {
 
         if (loginService.login(person.getUsername(),person.getPassword())){
 
-            return "newsfeed";
+            ra.addFlashAttribute("username", PublicVars.global_username);
+            return "redirect:newsfeed";
         }
         return "login";
     }
 
     @RequestMapping(value = {"/","/newsfeed"},  method = {RequestMethod.GET, RequestMethod.POST})
-    public String homenewsfeed(){
+    public String homenewsfeed(Model model){
+        if (!loginService.isAuthenticated()){
+            return "login";
+        }
         return "newsfeed";
     }
 
@@ -88,6 +91,7 @@ public class HomeController {
 
     @RequestMapping(value = "/logout",  method = {RequestMethod.GET, RequestMethod.POST})
     public String logoutnewsfeed(){
+        loginService.logout();
         return "login";
     }
 
