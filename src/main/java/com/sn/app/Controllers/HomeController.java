@@ -107,9 +107,10 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/editprofile",  method = {RequestMethod.GET, RequestMethod.POST})
-    public String editprofile(){
+    public java.lang.String editprofile(){
         return "editprofile";
     }
+
 
     private FacebookConnectionFactory factory = new FacebookConnectionFactory("459570614997343",
             "527354cb4319414c73a7835ec7975ad6");
@@ -178,4 +179,6 @@ public class HomeController {
         return model;
 
     }
+
+
 }
