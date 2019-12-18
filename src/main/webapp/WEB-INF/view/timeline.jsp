@@ -120,6 +120,8 @@
                     </div>
 
 
+
+
                 </div>
                 <div class="col-md-2 static">
                     <div id="sticky-sidebar">
@@ -172,6 +174,8 @@
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/timeline.js"></script>
+<script src="js/addcomment.js"></script>
+
 
 </body>
 </html>

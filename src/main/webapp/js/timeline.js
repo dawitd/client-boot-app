@@ -1,6 +1,10 @@
 $(document).ready(function(){
 
     show_posts();
+
+    // $("#addcomment").click(function () {
+    //     comment_ajax_submit();
+    // })
 });
 
 let myid=''
@@ -53,7 +57,8 @@ function show_posts() {
 
                             + '<div class="post-comment">'
                             + '<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />'
-                            + '<input type="text" class="form-control" placeholder="Post a comment">'
+                            + '<input type="text" id="btn-comment" class="form-control" placeholder="Post a comment"/>'
+                            +' <button class="btn btn-primary pull-right ">Add Comment</button>'
                             + '</div>'
                             + '</div>'
                             + '</div>'
@@ -104,7 +109,7 @@ function show_comment_for_post(id) {
             console.log();
         }
 
-
     });
    // return postcomment;
 }
+
