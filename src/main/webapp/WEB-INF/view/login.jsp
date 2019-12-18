@@ -1,7 +1,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,9 +40,11 @@
             <a href="login" class="logo"><img src="images/mylogo.png" alt="Friend Finder"/></a>
 
 
+
             <h6 class="text-white"> <spring:message code="welcome.message" text="default"/> to Habari</h6>
             Language : <a href="?lang=eng">English</a>|<a href="?lang=sw">Swahili</a>
             <h2 class="text-white"><spring:message code="LoginHere" text="default"/></h2>
+
 
             <div class="line-divider"></div>
             <a href="go_login" id="google-button" class="btn btn-block btn-social btn-google">
@@ -51,7 +55,6 @@
             <a href="fb_login" id="facebook-button" class="btn btn-block btn-social btn-facebook">
                 <i class="fa fa-facebook"></i> <spring:message code="Sign_in_with" text="default"/> Facebook
             </a>
-
 
 
             <div class="form-wrapper">
@@ -154,4 +157,18 @@
 <script src="js/script.js"></script>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#locales").change(function () {
+            var selectedOption = $('#locales').val();
+            if (selectedOption != ''){
+                window.location.replace('international?lang=' + selectedOption);
+            }
+        });
+    });
+</script>
+
 </html>
