@@ -24,38 +24,40 @@ import java.util.Arrays;
 @Controller
 public class HomeController {
 
+    static final String all = "http://localhost:8080/person/all";
     @Autowired
     LoginService loginService;
-//    static final String all = "http://localhost:8080/person/all";
-//    @RequestMapping("home")
-//    public String Home(Model model){
-//
-//        // HttpHeaders
-//        HttpHeaders headers = new HttpHeaders();
-//
-//        headers.setAccept(Arrays.asList(new MediaType[] { MediaType.APPLICATION_JSON }));
-//        // Request to return JSON format
-//        headers.setContentType(MediaType.APPLICATION_JSON);
-//        headers.set("my_other_key", "my_other_value");
-//
-//        // HttpEntity<String>: To get result as String.
-//        HttpEntity<String> entity = new HttpEntity<String>(headers);
-//
-//        // RestTemplate
-//        RestTemplate restTemplate = new RestTemplate();
-//
-//        // Send request with GET method, and Headers.
-//        ResponseEntity<String> response = restTemplate.exchange(all, //
-//                HttpMethod.GET, entity, String.class);
-//
-//        String result = response.getBody();
-//
-//        System.out.println(result);
-//        model.addAttribute("obj", result);
-//        return "index";
-//    }
-    @RequestMapping(value={"login"})
-    public String home(@ModelAttribute("person") Person person){
+    @RequestMapping("home")
+    public String Home(Model model){
+
+        // HttpHeaders
+        HttpHeaders headers = new HttpHeaders();
+
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+        // Request to return JSON format
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("my_other_key", "my_other_value");
+
+        // HttpEntity<String>: To get result as String.
+        HttpEntity<String> entity = new HttpEntity<String>(headers);
+
+        // RestTemplate
+        RestTemplate restTemplate = new RestTemplate();
+
+        // Send request with GET method, and Headers.
+        ResponseEntity<String> response = restTemplate.exchange(all, //
+                HttpMethod.GET, entity, String.class);
+
+        String result = response.getBody();
+
+        System.out.println(result);
+        model.addAttribute("obj", result);
+        return "index";
+    }
+    @RequestMapping(value={"/","login"})
+
+    public String home(){
+
         return "login";
     }
 
@@ -69,32 +71,32 @@ public class HomeController {
         return "login";
     }
 
-    @RequestMapping(value = {"/","/newsfeed"},  method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/newsfeed"},  method = {RequestMethod.GET, RequestMethod.POST})
     public String homenewsfeed(){
         return "newsfeed";
     }
 
-    @RequestMapping(value = "/timeline",  method = RequestMethod.GET)
+    @RequestMapping(value = "/timeline",  method = {RequestMethod.GET, RequestMethod.POST})
     public String timelinenewsfeed(){
         return "timeline";
     }
 
-    @RequestMapping(value = "/profile",  method = RequestMethod.GET)
+    @RequestMapping(value = "/profile",  method = {RequestMethod.GET, RequestMethod.POST})
     public String profilenewsfeed(){
         return "profile";
     }
 
-    @RequestMapping(value = "/logout",  method = RequestMethod.GET)
+    @RequestMapping(value = "/logout",  method = {RequestMethod.GET, RequestMethod.POST})
     public String logoutnewsfeed(){
         return "login";
     }
 
-    @RequestMapping(value = "/Signup",  method = RequestMethod.GET)
+    @RequestMapping(value = "/Signup",  method = {RequestMethod.GET, RequestMethod.POST})
     public String Signuplogin(){
         return "Signup";
     }
 
-    @RequestMapping(value = "/editprofile",  method = RequestMethod.GET)
+    @RequestMapping(value = "/editprofile",  method = {RequestMethod.GET, RequestMethod.POST})
     public String editprofile(){
         return "editprofile";
     }

@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 //////-------------- upload profile picture ---------------------
 function uploadPicture() {
-    var path = "http://localhost:8080/person/upload"
+    var path = "http://localhost:8080/person/upload";
     var form = $('#fileUploadForm')[0];
     var data1 = new FormData(form);
     $.ajax({

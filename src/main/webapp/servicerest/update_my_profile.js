@@ -10,13 +10,13 @@ $(document).ready(function () {
 
     })
 
-})
+});
 
 
 
 function viewprofileOnePersonToEdit() {
     var count = 0;
-    var id=15;
+    var id=48;
     $
         .ajax({
             url : "http://localhost:8080/person/onePerson/"+id,
@@ -50,9 +50,9 @@ function viewprofileOnePersonToEdit() {
 
 
 function updateProfile() {
-    var id=15;
+    var id=48;
     // let path="http://localhost:8080/person/updateperson"+id;
-    let search={}
+    let search={};
     search["id"]=$("#id").val();
     search["firstName"]=$("#firstName").val();
     search["lastName"]=$("#lastName").val();
