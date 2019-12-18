@@ -86,10 +86,10 @@
                                 <div id="feed1"></div>
 
                                 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
-                                    <input type="hidden" class="form-control" id="user_id" value="15"/>
+                                    <input type="hidden" class="form-control" id="user_id" value="1"/>
 
                                     <input type="file" class="form-control" ID="profilepic_edit" name="file" /><br/>
-                                    <input type="submit" ID="btn" value="submit" class="btn btn-primary" />
+                                    <input type="submit" ID="btn_profile" value="submit" class="btn btn-primary" />
 
                                 </form>
 
