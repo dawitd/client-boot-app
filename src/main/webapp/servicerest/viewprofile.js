@@ -14,7 +14,7 @@ $(document).ready(function () {
     //
     // })
 
-})
+});
 
 // function viewprofiles() {
 //     var count = 0;
@@ -51,10 +51,10 @@ $(document).ready(function () {
 
 function viewprofileOnePerson() {
     var count = 0;
-    var id=15;
+    var idm=48;
     $
         .ajax({
-            url : "http://localhost:8080/person/onePerson/"+id,
+            url : "http://localhost:8080/person/onePerson/"+idm,
             type : "GET",
             dataType : 'json',
 
@@ -66,8 +66,9 @@ function viewprofileOnePerson() {
                  $("#phoneNumber").text(data.phoneNumber);
                  $("#address").text(data.addressCity+", "+ data.addressState);
                  $("#bio").text(data.bio);
-                $('#videodisplay').attr('src', 'data:video/mp4;base64,'+ data.profilePic);
-                alert(data.profilePic);
+               // $('#videodisplay').attr('src', 'data:video/mp4;base64,'+ data.profilePic);
+                $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
+               // alert(data.profilePic);
 
 
             },

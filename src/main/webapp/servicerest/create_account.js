@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 function createAccount() {
     let path="http://localhost:8080/person/saveperson";
-    let search={}
+    let search={};
     search["firstName"]=$("#firstName").val();
     search["lastName"]=$("#lastName").val();
     search["email"]=$("#email").val();
