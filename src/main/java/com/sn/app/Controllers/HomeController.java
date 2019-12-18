@@ -25,6 +25,8 @@ import java.util.Arrays;
 public class HomeController {
 
     static final String all = "http://localhost:8080/person/all";
+    @Autowired
+    LoginService loginService;
     @RequestMapping("home")
     public String Home(Model model){
 
@@ -69,32 +71,32 @@ public class HomeController {
         return "login";
     }
 
-    @RequestMapping(value = {"/","/newsfeed"},  method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/newsfeed"},  method = {RequestMethod.GET, RequestMethod.POST})
     public String homenewsfeed(){
         return "newsfeed";
     }
 
-    @RequestMapping(value = "/timeline",  method = RequestMethod.GET)
+    @RequestMapping(value = "/timeline",  method = {RequestMethod.GET, RequestMethod.POST})
     public String timelinenewsfeed(){
         return "timeline";
     }
 
-    @RequestMapping(value = "/profile",  method = RequestMethod.GET)
+    @RequestMapping(value = "/profile",  method = {RequestMethod.GET, RequestMethod.POST})
     public String profilenewsfeed(){
         return "profile";
     }
 
-    @RequestMapping(value = "/logout",  method = RequestMethod.GET)
+    @RequestMapping(value = "/logout",  method = {RequestMethod.GET, RequestMethod.POST})
     public String logoutnewsfeed(){
         return "login";
     }
 
-    @RequestMapping(value = "/Signup",  method = RequestMethod.GET)
+    @RequestMapping(value = "/Signup",  method = {RequestMethod.GET, RequestMethod.POST})
     public String Signuplogin(){
         return "Signup";
     }
 
-    @RequestMapping(value = "/editprofile",  method = RequestMethod.GET)
+    @RequestMapping(value = "/editprofile",  method = {RequestMethod.GET, RequestMethod.POST})
     public String editprofile(){
         return "editprofile";
     }
