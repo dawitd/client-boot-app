@@ -25,6 +25,8 @@ import java.util.Arrays;
 public class HomeController {
 
     static final String all = "http://localhost:8080/person/all";
+    @Autowired
+    LoginService loginService;
     @RequestMapping("home")
     public String Home(Model model){
 
@@ -99,6 +101,11 @@ public class HomeController {
         return "editprofile";
     }
 
+    @RequestMapping(value = "/test_admin",  method = RequestMethod.GET)
+    public String adminPage(){
+        return "admin";
+    }
+
     private FacebookConnectionFactory factory = new FacebookConnectionFactory("459570614997343",
             "527354cb4319414c73a7835ec7975ad6");
 
@@ -166,4 +173,6 @@ public class HomeController {
         return model;
 
     }
+
+
 }

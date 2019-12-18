@@ -1,5 +1,5 @@
 $(document).ready(function(){
-<<<<<<< HEAD
+
     alert("hello");
         show_posts();
 });
@@ -46,7 +46,7 @@ function show_posts() {
                             + '<div class="post-comment">'
                             + '<img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />'
                             + '<p><a href="timeline.jsp" class="profile-link">John</a> Bite na hano? Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>'
-=======
+
     $.ajax({
             url: "http://localhost:8080/post/getall",
             type: "GET",
@@ -122,16 +122,15 @@ alert();
                         post1 += + '<div class="post-comment">'
                             + '<img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />'
                             + '<p><a href="timeline.jsp" class="profile-link">John</a> '+item1.commentText +' </p>'
->>>>>>> 69618471f58277249e13d8133effe327627263d9
+
                             + '</div>'
                             + '<div class="post-comment">'
                             + '<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />'
                             + '<input type="text" class="form-control" placeholder="Post a comment">'
                             + '</div>'
-<<<<<<< HEAD
                             + '</div>'
                             + '</div>'
-                        // f(item.postId);
+
                     });
             $(".post-content").html(post);
         },
@@ -143,51 +142,3 @@ alert();
 
 }
 
-
-
-
-
-// function f(postid) {
-//
-//     $.ajax({
-//         url: 'http://localhost:8080/comment/all/'+postid,
-//         type: "GET",
-//         dataType: 'json',
-//         success: function (data1) {
-// alert();
-//             var post1='';
-//             $
-//                 .each(
-//                     data1,
-//                     function (i, item1) {
-//                         alert(postid);
-//                         post1 += + '<div class="post-comment">'
-//                             + '<img src="images/users/user-4.jpg" alt="" class="profile-photo-sm" />'
-//                             + '<p><a href="timeline.jsp" class="profile-link">John</a> '+item1.commentText +' </p>'
-//                             + '</div>'
-//                             + '<div class="post-comment">'
-//                             + '<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />'
-//                             + '<input type="text" class="form-control" placeholder="Post a comment">'
-//                             + '</div>'
-//
-//                     });
-//             $(".post-comment").html(post1);
-//         },
-//         error: function () {
-//             console.log(data1);
-//         }
-//     });
-//
-// }
-=======
-
-                    });
-            $(".post-comment").html(post1);
-        },
-        error: function () {
-            console.log(data1);
-        }
-    });
-
-}
->>>>>>> 69618471f58277249e13d8133effe327627263d9
