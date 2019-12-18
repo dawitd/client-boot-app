@@ -55,13 +55,15 @@
 
 
             <div class="form-wrapper">
-                <form action="login" method="post" >
+                <form action="login" modelAttribute="person" method="post" >
                     <fieldset class="form-group">
+ 
                         <input type="text" class="form-control" id="username" placeholder="<spring:message code="Enter_username" text="default"/>">
                     </fieldset>
 
                     <fieldset class="form-group">
                         <input type="password" class="form-control" id="password" placeholder="<spring:message code="Enter_a_password" text="default"/>">
+ 
                     </fieldset>
 
                     <button class="btn-secondary" type="submit" ><spring:message code="login" text="default"/></button>
