@@ -49,7 +49,7 @@
                     <li class="dropdown"><a href="newsfeed"><spring:message code="Home" text="default"/></a></li>
                     <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
                     <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
-                    <li class="dropdown"><a href="login"><spring:message code="Logout" text="default"/></a></li>
+                    <li class="dropdown"><a href="logout"><spring:message code="Logout" text="default"/></a></li>
                 </ul>
 
 
@@ -75,7 +75,7 @@
             <div class="col-md-3 static">
                 <div class="profile-card">
                     <img src="images/users/user-1.jpg" alt="user" class="profile-photo" />
-                    <h5><a href="timeline" class="text-white">Sarah Cruiz</a></h5>
+                    <h5><a href="timeline" class="text-white">${username}</a></h5>
                     <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 12 <spring:message code="followers" text="default"/></a>
                 </div><!--profile card ends-->
                 <ul class="nav-news-feed">
