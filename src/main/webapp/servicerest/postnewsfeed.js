@@ -3,6 +3,7 @@ $(document).ready(function(){
         $("#post_upload_btn").click(function () {
             //alert("clicked");
             uploadPicture();
+            post_ajax_submit();
         })
     });
 
@@ -50,7 +51,11 @@ function uploadPicture() {
         //     xhr.setRequestHeader("Authorization", "Bearer " + d.token);
         // },
         success: function (data) {
-            post_ajax_submit();
+
+          //alert("byakunze");
+
+
+
         },
         error: function (e) {
             alert(e.responseText);

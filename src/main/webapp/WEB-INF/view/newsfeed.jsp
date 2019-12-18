@@ -100,9 +100,8 @@
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
                                 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
 <%--                                    <input type="hidden" class="form-control" id="user_id" value="15"/>--%>
-                                     <textarea id="postText" cols="30" rows="1" class="form-control" /></textarea>
-
-                                    <input type="file" class="form-control" ID="profilepic_edit" name="file" /><br/>
+                                     <textarea id="postText" cols="30" rows="2" class="form-control"  required placeholder="What's on your mind ?"/></textarea>
+                                    <input type="file" class="form-control" ID="profilepic_edit" name="file" required/><br/>
 
                                     <%--    value="<spring:message code="Browse" text="default"/>--%>
                                      <input type="submit" ID="post_upload_btn" class="btn btn-primary" value="Save Post"/>
@@ -111,21 +110,23 @@
 
 
 
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-5">
-                            <div class="tools">
-                                <ul class="publishing-tools list-inline">
-                                    <li><a href="#"><i class="ion-compose"></i></a></li>
-                                    <li><a href="#"><i class="ion-images"></i></a></li>
-                                    <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
-                                </ul>
-
-                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>
 
                             </div>
                         </div>
+<%--                        <div class="col-md-5 col-sm-5">--%>
+<%--                            <div class="tools">--%>
+<%--                                <ul class="publishing-tools list-inline">--%>
+<%--                                    <li><a href="#"><i class="ion-compose"></i></a></li>--%>
+<%--                                    <li><a href="#"><i class="ion-images"></i></a></li>--%>
+<%--                                    <li><a href="#"><i class="ion-ios-videocam"></i></a></li>--%>
+
+<%--                                </ul>--%>
+
+<%--                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>--%>
+
+<%--                            </div>--%>
+<%--                        </div>--%>
                     </div>
                 </div><!-- Post Create Box End-->
 

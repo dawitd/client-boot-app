@@ -5,6 +5,10 @@ $(document).ready(function(){
     // $("#addcomment").click(function () {
     //     comment_ajax_submit();
     // })
+    // $(".mybt").click(function () {
+    //     alert("do not disturb me ")
+    //
+    // })
 });
 
 let myid='';
@@ -26,12 +30,24 @@ function show_posts() {
             $
                 .each(
 
+            // <div class="about-content-block">
+            //     <video controls id="videodisplay">
+            //     <source type="video/mp4" src="" >
+            //     </video>
+            //     </div>
+
+
                     data,
                    // $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
                     function (i, item) {
                         // alert(item.postId);
                         myid= item.postId;
                         post +='<div class="post-container">'
+                            +'<div class="about-content-block">'
+                            +'<video controls id="videodisplay">'
+                            +'<source type="video/mp4" src="data:video/mp4;base64,'+item.profilePic+'" >'
+                            +'</video>'
+                            +'</div>'
                             + '<img src="data:image/png;base64,'+item.profilePic+'" alt="post-image" class="img-responsive post-image" />'
                             +'<img src="images/users/user-2.jpg" alt="user" class="profile-photo-md pull-left" />'
                             +'<div class="post-detail">'
@@ -52,12 +68,17 @@ function show_posts() {
                             +myid
 
                             +'</div>'
+                            +'<div id='+myid+'>'
+                            +myid
+
+                            +'</div>'
                             +'<div class="post-comment">'
                             +'<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />'
                             // +'<input type="text" id="btn-comment" class="form-control" placeholder="Post a comment">'
+
                             +'<input type="text" id="btn-comment" class="form-control" placeholder="Post a comment">'
                             // +' <button class="btn btn-primary pull-right">Add Comment</button>'
-                            +' <button class="btnComment">Add Comment 000</button>'
+                            +' <button class="mybtn" onclick = "checkClick()">Add Comment 000</button>'
                             +'</div>'
                             +'</div>'
                             +'</div>'
@@ -76,5 +97,10 @@ function show_posts() {
 
 
     });
+}
+
+function checkClick() {
+    $(this).css("background-color", "red");
+alert("byakunze")
 }
 
