@@ -101,16 +101,21 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-7">
 
-
-
                     <!-- Post Content
                     ================================================= -->
                     <div class="post-content">
 
+<<<<<<< HEAD
+                    </div>
+
+
+
+=======
 
 
                     </div>
 
+>>>>>>> 8a4756a894c86c93e61a008f243ff23e9a39e091
 
                 </div>
                 <div class="col-md-2 static">
@@ -164,6 +169,9 @@
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="servicerest/timeline.js"></script>
 <script src="js/script.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/addcomment.js"></script>
+
 
 
 </body>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="">
-
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/addcomment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/showPost_timeline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers/HomeController.java" afterDir="false" />
@@ -30,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/viewprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/viewprofile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" afterDir="false" />
     </list>
+
 
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +79,7 @@
   </component>
  
   <component name="ProjectId" id="1UroJaFlV1XRtxjgCIRa0aPTq2z" />
- 
+
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -95,7 +98,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,12 +115,12 @@
  
   </component>
   <component name="RecentsManager">
+
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
- 
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -130,7 +133,6 @@
         </RuleState>
       </list>
     </option>
- 
   </component>
   <component name="RunManager">
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -138,9 +140,7 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sn.app.AppApplication" />
       <option name="VM_PARAMETERS" value="-Dserver.port=8090" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
- 
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
- 
+      <option name="ALTERNATIVE_JRE_PATH" value="12" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,9 +166,11 @@
       <workItem from="1576271850027" duration="16270000" />
       <workItem from="1576271732241" duration="196000" />
       <workItem from="1576271968482" duration="1510000" />
+
  
       <workItem from="1576457008152" duration="4160000" />
  
+
     </task>
     <task id="LOCAL-00001" summary="add some method in home controller and change forms in JSP">
       <created>1576221273158</created>
@@ -215,6 +217,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="add some method in home controller and change forms in JSP" />
   </component>
   <component name="WindowStateProjectService">
+
     <state x="320" y="115" key="#Project_Structure" timestamp="1576271414194">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -339,5 +342,6 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+
   </component>
 </project>
