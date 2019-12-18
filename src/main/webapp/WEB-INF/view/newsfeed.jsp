@@ -206,6 +206,7 @@
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="servicerest/postnewsfeed.js"></script>
 <script src="servicerest/showPost_timeline.js"></script>
+<script src="servicerest/getUserLogedIn.js"></script>
 <script src="js/script.js"></script>
 <!--<script src="servicerest/post.display.timeline.js"></script>-->
 </body>

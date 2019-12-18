@@ -146,20 +146,8 @@
                             <p id="address"></p>
 
                         </div>
-                        <div class="about-content-block">
-                            <video controls id="videodisplay">
-                                <source type="video/mp4" src="" >
-                            </video>
-                        </div>
-                    <!-------------- this is  tes for ---------->
-                        <div id="allPerson"></div>
-
-                        <button class="btn-primary" id="save_updates">view all test</button>
-                        <div id="feedback"></div>
 
 
-
-                        <!-------------- this is  tes for ---------->
 
 
                     </div>
@@ -235,7 +223,6 @@
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="servicerest/viewprofile.js"></script>
-<script src="servicerest/get_all_person.js"></script>
 <script src="js/script.js"></script>
 
 </body>

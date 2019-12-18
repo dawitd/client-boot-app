@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    alert("my profile test");
     viewprofileOnePerson();
     // $("#view_data").click(function () {
     //
@@ -51,7 +52,7 @@ $(document).ready(function () {
 
 function viewprofileOnePerson() {
     var count = 0;
-    var idm=48;
+    var idm=1;
     $
         .ajax({
             url : "http://localhost:8080/person/onePerson/"+idm,
