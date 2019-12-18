@@ -98,49 +98,82 @@
                             <div class="form-group">
                                 <input id="person_id" type="hidden" value="1">
                                 <img src="images/users/user-1.jpg" alt="" class="profile-photo-md" />
+
+
                                 <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
 <%--                                    <input type="hidden" class="form-control" id="user_id" value="15"/>--%>
-                                     <textarea id="postText" cols="30" rows="2" class="form-control"  required placeholder="What's on your mind ?"/></textarea>
-                                    <input type="file" class="form-control" ID="profilepic_edit" name="file" required/><br/>
+    <textarea id="postText" cols="30" rows="1" class="form-control" /></textarea>
 
-                                    <%--    value="<spring:message code="Browse" text="default"/>--%>
+                                    <input type="file" class="form-control" ID="profilepic_edit" name="file" /><br/>
+
+<%--    value="<spring:message code="Browse" text="default"/>--%>
                                      <input type="submit" ID="post_upload_btn" class="btn btn-primary" value="Save Post"/>
                                 </form>
 
 
 
 
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="tools">
+                                <ul class="publishing-tools list-inline">
+                                    <li><a href="#"><i class="ion-compose"></i></a></li>
+                                    <li><a href="#"><i class="ion-images"></i></a></li>
+                                    <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
 
+                                </ul>
+
+                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>
 
                             </div>
                         </div>
-<%--                        <div class="col-md-5 col-sm-5">--%>
-<%--                            <div class="tools">--%>
-<%--                                <ul class="publishing-tools list-inline">--%>
-<%--                                    <li><a href="#"><i class="ion-compose"></i></a></li>--%>
-<%--                                    <li><a href="#"><i class="ion-images"></i></a></li>--%>
-<%--                                    <li><a href="#"><i class="ion-ios-videocam"></i></a></li>--%>
-
-<%--                                </ul>--%>
-
-<%--                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>--%>
-
-<%--                            </div>--%>
-<%--                        </div>--%>
                     </div>
                 </div><!-- Post Create Box End-->
+
 
                 <!-- Post Content
                 ================================================= -->
                 <div class="post-content">
 
-
                 </div>
 
 
 
+<!--     ======================  -->
 
+                <div class="post-contents">
+                    <img src="images/post-images/11.jpg" alt="" class="img-responsive post-image" />
+                    <div class="post-container">
+                        <img src="images/users/user-9.jpg" alt="user" class="profile-photo-md pull-left" />
+                        <div class="post-detail">
+                            <div class="user-info">
+                                <h5><a href="timeline.html" class="profile-link">Anna Young</a> <span class="following">following</span></h5>
+                                <p class="text-muted">Published a photo about 4 hour ago</p>
+                            </div>
+                            <div class="reaction">
+                                <a class="btn text-green"><i class="icon ion-thumbsup"></i> 2</a>
+                                <a class="btn text-red"><i class="fa fa-thumbs-down"></i> 0</a>
+                            </div>
+                            <div class="line-divider"></div>
+                            <div class="post-text">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                            </div>
+                            <div class="line-divider"></div>
+                            <div class="post-comment">
+                                <img src="images/users/user-10.jpg" alt="" class="profile-photo-sm" />
+                                <p><a href="timeline.html" class="profile-link">Julia </a>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                            </div>
+                            <div class="post-comment">
+                                <img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />
+                                <input type="text" id="commentText" class="form-control" placeholder="Post a comment"/>
+<!--                                <button id="btnComment">Add Comment</button>-->
 
+                                <button class="btnComment">New Add Comment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Newsfeed Common Side Bar Right
@@ -205,8 +238,11 @@
 <script src="js/jquery.sticky-kit.min.js"></script>
 <script src="js/jquery.scrollbar.min.js"></script>
 <script src="servicerest/postnewsfeed.js"></script>
-<script src="servicerest/showPost_timeline.js"></script>
 <script src="js/script.js"></script>
+<script src="js/addcomment.js"></script>
+<!--<script src="js/timeline.js"></script>-->
+<script src="js/post.on.newsfeed.js"></script>
+<script src="js/showPost_timeline.js"></script>
 <!--<script src="servicerest/post.display.timeline.js"></script>-->
 </body>
 </html>

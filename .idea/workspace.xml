@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/admin.js" afterDir="false" />
+    <list default="true" id="3b68a600-4461-4e2f-bbf5-a8cfdd06ceab" name="Default Changelist" comment="Merge branch 'master' of https://github.com/dawitd/client-boot-app into ClientBKN&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/webapp/servicerest/post.display.timeline.js&#10;#&#9;target/classes/com/sn/app/Controllers/HomeController.class">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/adminhome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/adminmanagepost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sn/app/Controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/post.display.timeline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/servicerest/post.display.timeline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AdminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AdminHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AdminManagePost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/AdminManagePost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newsfeed.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/newsfeed.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/servicerest/post.on.timeline.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sn/app/Controllers/HomeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +78,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/servicerest" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,13 +93,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/servicerest" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
     </key>
   </component>
   <component name="RunDashboard">
