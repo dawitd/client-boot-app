@@ -18,7 +18,7 @@ public class HomeController {
         // HttpHeaders
         HttpHeaders headers = new HttpHeaders();
 
-        headers.setAccept(Arrays.asList(new MediaType[] { MediaType.APPLICATION_JSON }));
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         // Request to return JSON format
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set("my_other_key", "my_other_value");
