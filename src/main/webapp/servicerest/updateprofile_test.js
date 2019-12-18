@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 ///------------save updates of profile -----------------------
 function updateprofile_test() {
-    var id=48;
+    var id=1;
     // let path="http://localhost:8080/person/updateperson"+id;
     let search={};
     search["id"]=$("#id").val();

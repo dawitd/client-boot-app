@@ -1,6 +1,6 @@
 var d = JSON.parse(localStorage.getItem("app-token"));
 $(document).ready(function () {
-    $("#btn").click(function (event) {
+    $("#btn_profile").click(function (event) {
         event.preventDefault();
         uploadPicture();
     });
