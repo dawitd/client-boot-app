@@ -34,14 +34,25 @@ function show_posts() {
                    // $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
                     function (i, item) {
                         // alert(item.postId);
+
+                        var contentDisplay='';
+
+                        if(item.postType.startsWith("video")){
+                            contentDisplay +='<div class="about-content-block">'
+                                +'<video controls >'
+                                +'<source type="video/mp4" src="data:video/mp4;base64,'+item.profilePic+'" >'
+                                +'</video>'
+                                +'</div>';
+
+                        }else{
+                            contentDisplay +='<img src="data:image/png;base64,'+item.profilePic+'" alt="post-image" class="img-responsive post-image" />';
+                        }
+
+
                         myid= item.postId;
                         post +='<div class="post-container">'
-                            +'<div class="about-content-block">'
-                            +'<video controls id="videodisplay">'
-                            +'<source type="video/mp4" src="data:video/mp4;base64,'+item.profilePic+'" >'
-                            +'</video>'
-                            +'</div>'
-                            + '<img src="data:image/png;base64,'+item.profilePic+'" alt="post-image" class="img-responsive post-image" />'
+
+                            +contentDisplay
                             +'<img src="images/users/user-2.jpg" alt="user" class="profile-photo-md pull-left" />'
                             +'<div class="post-detail">'
                             +'<div class="user-info">'

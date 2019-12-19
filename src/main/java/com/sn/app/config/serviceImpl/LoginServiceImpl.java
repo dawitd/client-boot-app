@@ -36,7 +36,13 @@ public class LoginServiceImpl implements LoginService {
         access_token_url += "&grant_type=password";
         access_token_url += "&redirect_uri=http://localhost:8090/";
 
-        ResponseEntity<String> response = restTemplate.exchange(access_token_url, HttpMethod.POST, request, String.class);
+        ResponseEntity<String> response;
+        try{
+             response = restTemplate.exchange(access_token_url, HttpMethod.POST, request, String.class);
+        }catch(Exception ex){
+            return  false;
+        }
+
 
         ObjectMapper mapper = new ObjectMapper();
         JsonNode node = mapper.readTree(response.getBody());
@@ -49,6 +55,7 @@ public class LoginServiceImpl implements LoginService {
 
         ResponseEntity<String> username = restTemplate.exchange("http://localhost:8080/getUser", HttpMethod.GET, entity, String.class);
         PublicVars.global_username = username.getBody();
+
 
 
         if (response.getStatusCode() == HttpStatus.UNAUTHORIZED){
@@ -78,6 +85,18 @@ public class LoginServiceImpl implements LoginService {
         HttpEntity<String> entity = new HttpEntity<>(headers1);
 
         ResponseEntity<String> username = restTemplate.exchange("http://localhost:8080/isAthenticated", HttpMethod.GET, entity, String.class);
+        if (username==null) return false;
+
+        PublicVars.global_username = username.getBody();
+        return true;
+    }
+
+    public boolean adminHome(){
+        HttpHeaders headers1 = new HttpHeaders();
+        headers1.add("Authorization", "Bearer " + token);
+        HttpEntity<String> entity = new HttpEntity<>(headers1);
+
+        ResponseEntity<String> username = restTemplate.exchange("http://localhost:8080/admin/person/delete/{id}", HttpMethod.GET, entity, String.class);
         if (username==null) return false;
 
         PublicVars.global_username = username.getBody();

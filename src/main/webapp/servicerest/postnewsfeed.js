@@ -13,6 +13,7 @@ function post_ajax_submit() {
     let post={};
     post["postText"]=$("#postText").val();
     post["person_id"]=$("#person_id").val();
+
     $.ajax({
         type:"POST",
         contentType:'application/json',
