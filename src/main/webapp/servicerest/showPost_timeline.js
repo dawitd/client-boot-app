@@ -68,17 +68,17 @@ function show_posts() {
                             +myid
 
                             +'</div>'
-                            +'<div id='+myid+'>'
-                            +myid
+                            +'<div class="myCommentView">'
+
 
                             +'</div>'
                             +'<div class="post-comment">'
                             +'<img src="images/users/user-1.jpg" alt="" class="profile-photo-sm" />'
                             // +'<input type="text" id="btn-comment" class="form-control" placeholder="Post a comment">'
 
-                            +'<input type="text" id="btn-comment" class="form-control" placeholder="Post a comment">'
+                            +'<input type="text"  class="commentText" placeholder="Post a comment">'
                             // +' <button class="btn btn-primary pull-right">Add Comment</button>'
-                            +' <button class="mybtn" onclick = "checkClick()">Add Comment 000</button>'
+                            +' <button class="mybtn" onclick = "comment_ajax_submit()">Add Comment 000</button>'
                             +'</div>'
                             +'</div>'
                             +'</div>'
@@ -102,5 +102,38 @@ function show_posts() {
 function checkClick() {
     $(this).css("background-color", "red");
 alert("byakunze")
+}
+
+
+function comment_ajax_submit() {
+
+    alert("2 Hello comment");
+    var cc= $(".commentText").val();
+    $(".myCommentView").append(cc);
+    alert(cc);
+    let path="http://localhost:8080/comment/add";
+    let post={}
+    post["commentText"]=$(".commentText").val();
+    // post["person_id"]=$("#person_id").val();
+    $.ajax({
+        type:"POST",
+        contentType:'application/json',
+        url:path,
+        data:JSON.stringify(post),
+        dataType:'json',
+        cache: false,
+        timeout: 600000,
+        success:function () {
+            alert("3 Hello comment");
+
+        },
+        error:function (e) {
+
+            alert("4 Hello comment");
+
+        }
+
+    });
+
 }
 
