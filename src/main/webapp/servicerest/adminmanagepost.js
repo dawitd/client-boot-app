@@ -55,9 +55,10 @@ function show_unhealthy_posts() {
                         +' <div class="badge badge-warning">Pending</div>'
                         +' </td>'
                         +' <td class="text-center">'
-                        // +'  <button type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm">Enable'
-                            + '<a href="#" data-id="'+item.id+'" class="text-green follow">Disable</a>'
-                            +'  </button>'
+                            +'<div>'
+                         +'  <button type="button" onclick="trying('+item.postId+');" class="postupdating" class="btn btn-primary btn-sm">'+item.status+'</button>'
+                            +'<input type="hidden" value="'+item.postId+'">'
+                            +'</div>'
                             +'  </td>'
                             +'  </tr>'
                     });
@@ -72,6 +73,32 @@ function show_unhealthy_posts() {
 
 
     });
+}
+
+function trying(d){
+
+    let path="http://localhost:8080/disablepost/"+d;
+
+    $.ajax({
+        type:"POST",
+        contentType:'application/json',
+        url:path,
+     //   data:JSON.stringify(post),
+        dataType:'json',
+        cache: false,
+        timeout: 600000,
+        success:function (data) {
+            alert("Done successfully");
+            show_unhealthy_posts();
+        },
+        error:function (e) {
+
+            alert("Error "+e.textResponse);
+
+        }
+
+    });
+
 }
 
 
