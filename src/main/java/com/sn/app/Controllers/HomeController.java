@@ -61,19 +61,22 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/login",  method = RequestMethod.POST)
-    public String newsfeed(@ModelAttribute("person") Person person,RedirectAttributes ra) throws JsonProcessingException {
+    public String newsfeed(@ModelAttribute("person") Person person,Model model, RedirectAttributes ra) throws JsonProcessingException {
 
         if (loginService.login(person.getUsername(),person.getPassword())){
 
             ra.addFlashAttribute("username", PublicVars.global_username);
+
             return "redirect:newsfeed";
         }
+        model.addAttribute("error","Invalid credentional");
         return "login";
     }
 
     @RequestMapping(value = {"/","/newsfeed"},  method = {RequestMethod.GET, RequestMethod.POST})
     public String homenewsfeed(Model model){
         if (!loginService.isAuthenticated()){
+
             return "login";
         }
         return "newsfeed";

@@ -41,6 +41,8 @@
 
 
 
+
+
             <h6 class="text-white"> <spring:message code="welcome.message" text="default"/> to Habari</h6>
             Language : <a href="?lang=eng">English</a>|<a href="?lang=sw">Swahili</a>
             <h2 class="text-white"><spring:message code="LoginHere" text="default"/></h2>
@@ -56,6 +58,11 @@
                 <i class="fa fa-facebook"></i> <spring:message code="Sign_in_with" text="default"/> Facebook
             </a>
 
+            <c:if test="${not empty error}">
+                <div class="alert alert-danger" role="alert">
+                    ${error}
+                </div>
+            </c:if>
 
             <div class="form-wrapper">
                 <form action="login" modelAttribute="person" method="post" >
