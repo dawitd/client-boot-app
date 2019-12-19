@@ -16,9 +16,7 @@ let arr = [];
 let count =0;
 function show_posts() {
 
-  //  alert("I am in....");
 
-    // var personId = 1;
     $.ajax({
         url: "http://localhost:8080/post/getall",
         type: "GET",
@@ -30,25 +28,31 @@ function show_posts() {
             $
                 .each(
 
-            // <div class="about-content-block">
-            //     <video controls id="videodisplay">
-            //     <source type="video/mp4" src="" >
-            //     </video>
-            //     </div>
 
 
                     data,
                    // $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
                     function (i, item) {
                         // alert(item.postId);
+
+                        var contentDisplay='';
+
+                        if(item.postType.startsWith("video")){
+                            contentDisplay +='<div class="about-content-block">'
+                                +'<video controls >'
+                                +'<source type="video/mp4" src="data:video/mp4;base64,'+item.profilePic+'" >'
+                                +'</video>'
+                                +'</div>';
+
+                        }else{
+                            contentDisplay +='<img src="data:image/png;base64,'+item.profilePic+'" alt="post-image" class="img-responsive post-image" />';
+                        }
+
+
                         myid= item.postId;
                         post +='<div class="post-container">'
-                            +'<div class="about-content-block">'
-                            +'<video controls id="videodisplay">'
-                            +'<source type="video/mp4" src="data:video/mp4;base64,'+item.profilePic+'" >'
-                            +'</video>'
-                            +'</div>'
-                            + '<img src="data:image/png;base64,'+item.profilePic+'" alt="post-image" class="img-responsive post-image" />'
+
+                            +contentDisplay
                             +'<img src="images/users/user-2.jpg" alt="user" class="profile-photo-md pull-left" />'
                             +'<div class="post-detail">'
                             +'<div class="user-info">'

@@ -1,9 +1,11 @@
+var id = localStorage.getItem("logedin_id");
+
 $(document).ready(function () {
 
     viewprofileOnePersonToEdit();
 
     $("#save_updates").click(function () {
-        //alert(" update clicked")
+
         updateProfile();
 
         redirectToProfile();
@@ -15,8 +17,8 @@ $(document).ready(function () {
 
 
 function viewprofileOnePersonToEdit() {
-    var count = 0;
-    var id=1;
+
+
     $
         .ajax({
             url : "http://localhost:8080/person/onePerson/"+id,
@@ -34,9 +36,6 @@ function viewprofileOnePersonToEdit() {
                 $("#addressState").val(data.addressState);
                 $("#addressCity").val(data.addressCity);
                 $("#bio").val(data.bio);
-
-               // $("#profile").html(profile);
-                //$("#postcount").html(count + " posts ");
                 $('#p_image2').attr('src', 'data:image/png;base64,'+data.profilePic);
                 alert(data.profilePath);
 
@@ -50,8 +49,8 @@ function viewprofileOnePersonToEdit() {
 
 
 function updateProfile() {
-    var id=1;
-    // let path="http://localhost:8080/person/updateperson"+id;
+
+
     let search={};
     search["id"]=$("#id").val();
     search["firstName"]=$("#firstName").val();

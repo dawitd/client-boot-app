@@ -6,13 +6,15 @@ $(document).ready(function(){
 
 });
 
+var logedUsername=$("#logedUsername").val();
 
 function viewprofileOnePerson() {
-    var count = 0;
-    var idm=1;
+
+
+
     $
         .ajax({
-            url : "http://localhost:8080/person/onePerson/"+idm,
+            url : "http://localhost:8080/person/onePersonByUsername/"+logedUsername,
             type : "GET",
             dataType : 'json',
 
@@ -20,8 +22,9 @@ function viewprofileOnePerson() {
 
                 $("#names").text(data.firstName+" "+data.lastName);
 
-                $('#my_profile_pic').attr('src', 'data:image/png;base64,'+data.profilePic);
-                // alert(data.profilePic);
+                $('#profile_picture').attr('src', 'data:image/png;base64,'+data.profilePic);
+
+                localStorage.setItem('logedin_id', data.id);
 
 
             },

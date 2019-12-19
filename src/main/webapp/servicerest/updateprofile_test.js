@@ -1,5 +1,9 @@
+var id = localStorage.getItem("logedin_id");
+
 $(document).ready(function(){
 
+
+    alert("i amm just testing ")
     $("#save_updates").click(function () {
         updateprofile_test();
 
@@ -12,8 +16,8 @@ $(document).ready(function(){
 
 ///------------save updates of profile -----------------------
 function updateprofile_test() {
-    var id=1;
-    // let path="http://localhost:8080/person/updateperson"+id;
+
+
     let search={};
     search["id"]=$("#id").val();
     search["firstName"]=$("#firstName").val();

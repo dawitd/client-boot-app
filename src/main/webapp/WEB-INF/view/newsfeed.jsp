@@ -75,8 +75,10 @@
             ================================================= -->
             <div class="col-md-3 static">
                 <div class="profile-card">
-                    <img src="images/users/user-1.jpg" alt="user" class="profile-photo" />
-                    <h5><a href="timeline" class="text-white">${username}</a></h5>
+                    <img src="images/users/user-1.jpg" id="profile_picture" alt="user" class="profile-photo" />
+                    <h5><a href="#" class="text-white">Username: ${username}</a></h5>
+                    <h5 id="names"></h5>
+                    <input id="logedUsername" type="hidden" value="${username}" />
                     <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 12 <spring:message code="followers" text="default"/></a>
                 </div><!--profile card ends-->
                 <ul class="nav-news-feed">
@@ -115,19 +117,7 @@
 
                             </div>
                         </div>
-<%--                        <div class="col-md-5 col-sm-5">--%>
-<%--                            <div class="tools">--%>
-<%--                                <ul class="publishing-tools list-inline">--%>
-<%--                                    <li><a href="#"><i class="ion-compose"></i></a></li>--%>
-<%--                                    <li><a href="#"><i class="ion-images"></i></a></li>--%>
-<%--                                    <li><a href="#"><i class="ion-ios-videocam"></i></a></li>--%>
 
-<%--                                </ul>--%>
-
-<%--                                <button class="btn btn-primary pull-right" id="btn-post"><spring:message code="Post" text="default"/></button>--%>
-
-<%--                            </div>--%>
-<%--                        </div>--%>
                     </div>
                 </div><!-- Post Create Box End-->
 

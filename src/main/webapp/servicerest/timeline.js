@@ -7,9 +7,8 @@ let myid='';
 let arr = [];
 let count =0;
 function show_posts() {
-    alert("I am in....");
 
-    // var personId = 1;
+
     $.ajax({
         url: "http://localhost:8080/post/getall",
         type: "GET",
