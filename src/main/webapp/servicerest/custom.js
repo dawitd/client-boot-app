@@ -1,3 +1,6 @@
+var id = localStorage.getItem("logedin_id");
+
+
 $(function () {
     if (window.location.pathname === '/newsfeed') {
         let suggestionsHandler = suggestions();
@@ -13,7 +16,7 @@ $(function () {
 });
 
 const suggestions = function () {
-    let userId = 34;
+    let userId = id;
     let suggestionsFetch = function () {
         $.ajax({
             url: 'http://localhost:8080/follow-suggestions/'+userId,

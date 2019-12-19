@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
         $("#post_upload_btn").click(function () {
-            //alert("clicked");
+
             uploadPicture();
             post_ajax_submit();
         })
@@ -22,7 +22,7 @@ function post_ajax_submit() {
         cache: false,
 
         success:function () {
-        alert("hey i'm done ")
+       // alert("hey i'm done ")
 
         },
         error:function (e) {

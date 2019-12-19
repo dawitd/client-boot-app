@@ -55,12 +55,12 @@ public class HomeController {
         model.addAttribute("obj", result);
         return "index";
     }
-    @RequestMapping(value={"/","login"})
+    @RequestMapping(value={"/","login"},  method =  {RequestMethod.GET, RequestMethod.POST})
     public String home(@ModelAttribute("person") Person person){
         return "login";
     }
 
-    @RequestMapping(value = "/login",  method = RequestMethod.POST)
+    @RequestMapping(value = "/login",  method =  {RequestMethod.GET, RequestMethod.POST})
     public String newsfeed(@ModelAttribute("person") Person person,RedirectAttributes ra) throws JsonProcessingException {
 
         if (loginService.login(person.getUsername(),person.getPassword())){

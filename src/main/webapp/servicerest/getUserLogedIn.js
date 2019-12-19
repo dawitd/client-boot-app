@@ -23,8 +23,9 @@ function viewprofileOnePerson() {
                 $("#names").text(data.firstName+" "+data.lastName);
 
                 $('#profile_picture').attr('src', 'data:image/png;base64,'+data.profilePic);
-                // alert(data.profilePic);
-                alert(data.id)
+
+                localStorage.setItem('logedin_id', data.id);
+
 
             },
             error : function() {

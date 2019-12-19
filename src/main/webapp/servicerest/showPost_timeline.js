@@ -16,9 +16,7 @@ let arr = [];
 let count =0;
 function show_posts() {
 
-  //  alert("I am in....");
 
-    // var personId = 1;
     $.ajax({
         url: "http://localhost:8080/post/getall",
         type: "GET",
@@ -30,11 +28,6 @@ function show_posts() {
             $
                 .each(
 
-            // <div class="about-content-block">
-            //     <video controls id="videodisplay">
-            //     <source type="video/mp4" src="" >
-            //     </video>
-            //     </div>
 
 
                     data,
