@@ -13,7 +13,7 @@ $(function () {
 });
 
 const suggestions = function () {
-    let userId = 34;
+    let userId = 37;
     let suggestionsFetch = function () {
         $.ajax({
             url: 'http://localhost:8080/follow-suggestions/'+userId,
