@@ -50,6 +50,7 @@
                     <li class="dropdown"><a href="timeline"><spring:message code="Timeline" text="default"/></a></li>
                     <li class="dropdown"><a href="profile"><spring:message code="Profile" text="default"/></a></li>
                     <li class="dropdown"><a href="logout"><spring:message code="Logout" text="default"/></a></li>
+                    <li class="dropdown"><a href="AdminHome"><spring:message code="Admin" text="default"/></a></li>
                 </ul>
 
 
